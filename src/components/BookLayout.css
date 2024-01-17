@@ -1,0 +1,96 @@
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  /* create a glass looking effect */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(190, 190, 190, 0.3);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #726b6b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* on hover add smooth animation + background color */
+button:hover {
+  background-color: #2f2626;
+  transform: scale(1.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+q {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: #2f2626;
+}
+
+.price {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  color: #000000;
+  font-size: 20px;
+  margin: 0;
+}
+
+del {
+  color: #726b6b;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.bookStoreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #2f2626;
+}
+
+@media screen and (max-width: 1269px) {
+  .bookStoreGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
